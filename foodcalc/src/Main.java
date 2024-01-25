@@ -1,10 +1,22 @@
+/**
+ * Created by Roy Molina on 01-11-24
+ *
+ * Food Calculator
+ * - Determines what users should pay in a group order
+ * - Menu navigation system for user-friendly design
+ * - Input validation to ensure no negative values can be entered
+ *
+ * Latest Version : v1.1 (01-24-24)
+ */
+
+
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
 
-        //user object creation for user input
-        Scanner user = new Scanner(System.in);
+    //static object for ease of use
+    public static Scanner user = new Scanner(System.in);
+    public static void main(String[] args) {
 
         //variable to hold user choice for menu system
         int choice;
@@ -36,9 +48,6 @@ public class Main {
     }
 
     public static void calcCost(){
-
-        //user object creation for user input
-        Scanner user = new Scanner(System.in);
 
         //array declaration for costs
         ArrayList<Double> foodCost = new ArrayList<>();
@@ -104,7 +113,6 @@ public class Main {
     public static void calcTip(){
 
         //user input
-        Scanner user = new Scanner(System.in);
         double total;
 
         //variables to work with
